@@ -1,0 +1,173 @@
+/* BASE STYLES */
+/* --------------------------------- */
+
+:root {
+    --color--background: #241A82;
+    --color--foreground: #FFFFFF;
+    --color--accent: #DECADE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY  */
+/* --------------------------------- */
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120%;
+    line-height: 1.41em;
+    letter-spacing: -0.01em;
+
+    background-color: var(--color--background);
+    color: var(--color--foreground);
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+em {
+    font-family: 'Test Feijoa Medium',  Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: -0.02rem;
+}
+
+a, a:active, a:visited {
+    color: var(--color--foreground);
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* LAYOUT  */
+/* --------------------------------- */
+
+body {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    html {
+        font-size: 120%;
+    }
+
+    body {
+        max-width: 20rem;
+        margin: 0 auto;
+        padding-bottom: 8rem;
+    }
+}
+
+.logo {
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    margin-bottom: 3rem;
+}
+
+.clients {
+    margin-bottom: 3rem;
+}
+
+.clients h2 {
+    font-weight: normal;
+    font-size: 1em;
+    color: var(--color--accent);
+    margin-bottom: 1rem;
+}
+
+.clients li {
+    list-style: none;
+    display: inline-block;
+}
+
+.clients a {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--color--background);
+    background-color: var(--color--accent);
+
+    line-height: 1;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.83rem;
+
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.clients a:hover {
+    color: var(--color--background);
+    background-color: var(--color--foreground);
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 16rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    
+    padding: 0.25rem 1rem;
+    border-radius: 3rem;
+
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.08), 0 2px 2px 0 rgba(0,0,0,0.02);
+
+    backdrop-filter: blur(10px);
+}
+
+@media (min-width: 28rem) {
+    form {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        margin-left: -8rem;
+    }
+}
+
+input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+input[type=email] {
+    background-color: transparent;
+    border: none;
+    font-size: 0.833rem;
+    color: var(--color--foreground);
+    outline: none;
+    width: 8rem;
+}
+
+::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+input[type=submit] {
+    font-size: 0.667rem;
+    cursor: pointer;
+    background-color: var(--color--background);
+    color: var(--color--foreground);
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+    margin-right: -0.75rem;
+}
+
+small {
+    font-size: 0.667rem;
+    font-weight: 500;
+    color: var(--color--accent);
+}

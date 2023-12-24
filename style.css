@@ -19,6 +19,7 @@
 
 @font-face {
     font-family: 'Feijoa';
+    font-style: italic;
     src:  url('feijoa.otf') format('opentype');
 }
 
@@ -136,7 +137,7 @@ form {
     backdrop-filter: blur(10px);
 }
 
-@media (min-width: 28rem) {
+@media (min-width: 28rem) and (min-height: 32rem) {
     form {
         position: fixed;
         bottom: 0;

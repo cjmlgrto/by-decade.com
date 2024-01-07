@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'Feijoa';
     font-style: italic;
-    src:  url('feijoa.otf') format('opentype');
+    src:  url('assets/feijoa.otf') format('opentype');
 }
 
 html {

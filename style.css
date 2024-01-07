@@ -81,27 +81,27 @@ body {
     margin-bottom: 3rem;
 }
 
-.clients {
+.clients, .services {
     margin-bottom: 3rem;
 }
 
-.clients h2 {
+.clients h2, .services h2 {
     font-weight: normal;
     font-size: 1em;
     color: var(--color--accent);
     margin-bottom: 1rem;
 }
 
-.clients li {
+.clients li, .services li {
     list-style: none;
     display: inline-block;
 }
 
-.clients a {
+.clients a, .services li {
     display: inline-block;
     font-weight: 500;
     color: var(--color--background);
-    background-color: var(--color--accent);
+    background-color: var(--color--foreground);
 
     line-height: 1;
     padding: 0.25rem 0.5rem;
@@ -112,9 +112,14 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.clients a:hover {
+.services li {
     color: var(--color--background);
-    background-color: var(--color--foreground);
+    background-color: var(--color--accent);
+}
+
+.clients a:hover {
+    color: var(--color--foreground);
+    background-color: var(--color--background);
 }
 
 form {

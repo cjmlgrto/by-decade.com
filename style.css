@@ -34,6 +34,8 @@ html {
 
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
+
+    -webkit-text-size-adjust: none;
 }
 
 em {

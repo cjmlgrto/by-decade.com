@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'LibreCaslon';
     font-style: italic;
-    src:  url('assets/libre-caslon.otf') format('opentype');
+    src:  url('/assets/libre-caslon.otf') format('opentype');
 }
 
 html {
